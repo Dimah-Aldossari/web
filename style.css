@@ -28,3 +28,48 @@ a {
   font-style: normal;
 }
 /* Nav Bar End */
+/* welcome-section Start */
+
+.welcome-section {
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(208, 206, 210);
+}
+p {
+  text-align: center;
+}
+/* welcome-section End  */
+
+/* blog-container Start */
+.blog-container {
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+}
+.sky-img {
+  grid-area: header;
+  border: 10px solid rgb(145, 51, 51);
+  background-color: black;
+}
+.light-img {
+  grid-area: menu;
+  background-color: rgb(30, 26, 145);
+}
+.d-img {
+  grid-area: content;
+  background-color: rgb(61, 198, 12);
+}
+.food-img {
+  grid-area: footer;
+  background-color: rgb(193, 212, 84);
+}
+/* blog-container End */
